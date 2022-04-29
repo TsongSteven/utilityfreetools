@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Convert Image to base64. In this tool you can convert image to base64 string and can download." />
+<meta name="keywords" content="online image converter, online image base64, fconvert image to base64, convert base64 to image, image to string" />      
+	  <link rel=“canonical” href=“http://chopimg.xyz/imagetobase64.html” />
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<!-- <link href="css/mdb.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/cropper.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/tsongcss.css">
+       <link type="text/css" href="https://uicdn.toast.com/tui-color-picker/v2.2.3/tui-color-picker.css" rel="stylesheet">
+        <link type="text/css" href="css/tui-image-editor/tui-image-editor.css" rel="stylesheet">	  
+		<title>Utilityfreetool - Free Online Tools for you.</title>
+	<style>
+		._menui.active {
+			background-color: #0099CC;
+		}
+		
+	  </style>
+  </head>
+  <body>
+	<nav  class="navbar navbar-expand-lg navbar-dark">
+		<div class="container">
+      <a href="index.html" class="navbar-brand text-dark _font" title="chopimg"><span class="text-danger"><i class="fas fa-tools"></i> UtilityFreeTool</span></a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseImgTools"
+					aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars text-dark"></i>
+				  </button>		
+		</div>
+	</nav>
+		<div class="container mt-3">
+			<div class="t-grid bg-info">
+					<div class="t-grid-6 text-center p-3 _menui active"><a href="imagetobase64.html" class="text-white font-weight-bold ">Image To Base64</a></div>
+					<div class="t-grid-6 text-center p-3 _menur active"><a href="base64toimage.html" class="text-white font-weight-bold ">Base64 To Image</a></div>
+				</div>
+	  </div>
+	
+	<h2 class="font-weight-bold text-center m-5 _font">Image to Base 64</h2>
+	<div class="_wrapper d-flex">
+		
+		<!-- Side Menu -->
+			
+			<!-- Main Content -->
+				<div class="container">
+					<main>
+<!-- Below are a series of inputs which allow file selection and interaction with the cropper api -->
+<div class="upload-btn-wrapper">
+
+<label class="btn btn-outline-danger waves-effect btn-upload">
+	
+	<i class="far fa-image"></i>
+	&nbsp;
+	Upload image to Convert into Base 64<input type="file" id="fileInput" accept="image/*" style="display: none"/></label>
+	
+</div>	
+<div class="label_wrapper text-dark">
+	Image Name: <label id="img_name" class="text-success">Not Selected</label>
+</div>                        
+						
+<div class="mb-2">
+					<button class="btn btn-danger rounded-0" id="converttoBase64">CONVERT TO BASE64</button>	
+						</div>
+<div class="result_section">
+							<h3 class="font-weight-bold">Result:</h3>					
+<textarea id="base64result" class="form-control" rows="20">
+    
+</textarea>	
+	<input type="button" class="btn btn-primary" id="download" value="Download as Text File" />
+
+						</div>
+					</main>
+				</div>		
+		</div>
+	  <div class="container mt-3">
+	  	<h2 class="text-center m-3 _font_h">How To Convert Image to Base64</h2>
+		  <ul>
+		  	<li class="_font_p">Click on The Load Button to load the image.</li>
+			 <li class="_font_p">Click on The CONVERT TO BASE64 to convert Image to Base64.</li>
+			  <li class="_font_p">Click on the Download Button to download base64 in TXT format.</li>
+		  </ul>
+		  
+		  
+		  <div class="row">
+		  	<div class="col-md-4">
+				<h4 class="bg-danger p-2 text-white _font_h">We Don't Save Your Image(s)</h4>
+				<p class="_font_p">Yes, you heard it right we don't save any Images uploaded here to Edit, Crop etc. Also we haven't used any server side programming language for any purpose so basically it's complitely client side.</p>
+			  </div>
+		  	<div class="col-md-4">
+				<h4 class="bg-danger p-2 text-white _font_h">Convert Unlimited Images</h4>
+				<p class="_font_p">It's complitely free tool to Convert your Image to Base64. Just load the Image, Convert into base64 and Download the Txt file. We Don't charge any amount for the process.</p>
+			  </div>
+		  	<div class="col-md-4">
+				<h4 class="bg-danger p-2 text-white _font_h">Image Compatibility.</h4>
+				<p class="_font_p">Load any Image format to Convert into Base64 like .jpg, .jpeg, .png etc. You don't have to worry about the format load the Image and Convert into Base64 without any hassle.</p>
+			  </div>
+		  </div>
+	  </div>
+  <footer class="page-footer bg-dark text-white p-3">
+    <div class="container">
+    
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="_font_h">Quick Links</h4>
+            <div class="text-left">
+				<a href="rectangle.html" class="text-white _font_p" title="Crop Image">Crop Image</a><br>
+				<a href="base64Encode.html" class="text-white _font_p" title="Convert Image">Convert Image</a><br>
+				<a href="filter.html" class="text-white _font_p" title="Image Filters">Image Filters</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4 class="_font_h">About</h4>
+          <p class="_font_p">UtilityFreeTool is an online Free tool where you can use this tools to make your task easier. 
+			  There are various tools where you can speed your task without wasting your time.
+		  </p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="_font_h">Contact</h4>
+          <a class="_font_p">iamdemigod123@gmail.com</a>
+        </div>
+      </div>
+    
+    </div>
+  
+  </footer>     
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- JQuery -->
+	  
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js" integrity="sha256-qE/6vdSYzQu9lgosKxhFplETvWvqAAlmAuR+yPh/0SI=" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>	
+	  <script src="js/jquery-cropper.js"></script>
+
+	  <script>
+			var upload =  document.querySelector('#fileInput');
+			var img_name =  document.querySelector('#img_name');
+			var convert =  document.querySelector('#converttoBase64');
+			var result =  document.getElementById('base64result');
+			var imgname;	
+		  //$('#fileInput').on('change', function(){
+				upload.addEventListener('change', function(){
+				if (this.files && this.files[0]) {
+					 imgname = "recropped_" + upload.files[0].name;
+				  if ( this.files[0].type.match(/^image\//) ) {  
+					  		var filetoload = this.files[0];
+                            img_name.innerHTML = upload.files[0].name;
+					  		
+					  convert.addEventListener('click', function(){
+						  var fileReader = new FileReader();
+						  
+						  fileReader.onload = function(fileLoadEvent){
+							  
+							  var srcData = fileLoadEvent.target.result;
+							  var _img = document.createElement('img');
+							  _img.src = srcData;
+							  	console.log(_img.src);
+							  result.value += _img.src;
+						  }
+						  
+						  fileReader.readAsDataURL(filetoload);
+					  });
+				  }
+				  else {
+					alert("Invalid file type! Please select an image file.");
+				  }
+				}
+				else {
+				  alert('No file(s) selected.');
+				}
+			});	  
+
+        function saveTextAsFile() {
+			//alert(imgname);
+            // grab the content of the form field and place it into a variable
+            var textToWrite = document.getElementById("base64result").value;
+            //  create a new Blob (html5 magic) that conatins the data from your form feild
+            var textFileAsBlob = new Blob([textToWrite], { type: 'text/plain' });
+            // Specify the name of the file to be saved
+            var fileNameToSaveAs = imgname + ".txt";
+
+            // Optionally allow the user to choose a file name by providing 
+            // an imput field in the HTML and using the collected data here
+            // var fileNameToSaveAs = txtFileName.text;
+
+            // create a link for our script to 'click'
+            var downloadLink = document.createElement("a");
+            //  supply the name of the file (from the var above).
+            // you could create the name here but using a var
+            // allows more flexability later.
+            downloadLink.download = fileNameToSaveAs;
+            // provide text for the link. This will be hidden so you
+            // can actually use anything you want.
+            downloadLink.innerHTML = "My Hidden Link";
+
+            // allow our code to work in webkit & Gecko based browsers
+            // without the need for a if / else block.
+            window.URL = window.URL || window.webkitURL;
+
+            // Create the link Object.
+            downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+            // when link is clicked call a function to remove it from
+            // the DOM in case user wants to save a second file.
+            downloadLink.onclick = destroyClickedElement;
+            // make sure the link is hidden.
+            downloadLink.style.display = "none";
+            // add the link to the DOM
+            document.body.appendChild(downloadLink);
+
+            // click the new link
+            downloadLink.click();
+        }
+
+        function destroyClickedElement(event) {
+            // remove the link from the DOM
+            document.body.removeChild(event.target);
+        }
+
+
+
+        $("#download").click(function (e) {
+
+            e.preventDefault();
+            saveTextAsFile();
+        });	  
+	  
+	  </script>
+ </body>
+</html>

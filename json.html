@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Convert array object to JSON. This tool can convert array object to JSON format." />
+<meta name="keywords" content="online JSON convertor, array object to json, object to json, array to json" />      
+	  <link rel=“canonical” href=“http://chopimg.xyz/imagetobase64.html” />
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<!-- <link href="css/mdb.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/cropper.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/tsongcss.css">
+       <link type="text/css" href="https://uicdn.toast.com/tui-color-picker/v2.2.3/tui-color-picker.css" rel="stylesheet">
+        <link type="text/css" href="css/tui-image-editor/tui-image-editor.css" rel="stylesheet">	  
+        <title>Utilityfreetool - Free Online Tools for you.</title>
+	<style>
+		._menui.active {
+			background-color: #0099CC;
+		}
+		
+	  </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav  class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand text-dark _font" title="chopimg"><span class="text-danger"><i class="fas fa-tools"></i> UtilityFreeTool</span></a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseImgTools"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-dark"></i>
+            </button>		
+      </div>
+    </nav>    
+    <div class="container">
+      <h3 class="font-weight-bold">Convert To Json</h3>
+      <p>Put Json Object in following format</p>
+      <code>{"name":"John", "phone": "+1 0012302", "address":"xyz address"}</code>
+      <textarea id="json_object" class="form-control mt-2"> </textarea>
+      <button id="convertToJson" class="btn btn-success rounded-0 mt-3">
+        Click Here
+      </button>
+      <br />
+      <br />
+      <div class="card">
+        <div class="card-body">
+          <p class="card-title">Json Format</p>
+          <pre id="result-before"></pre>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer bg-dark text-white p-3 mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4 class="_font_h">Quick Links</h4>
+              <div class="text-left">
+          <a href="xmltojson.html" class="text-white _font_p" title="Crop Image">XML to JSON</a><br>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4 class="_font_h">About</h4>
+            <p class="_font_p">UtilityFreeTool is an online Free tool where you can use this tools to make your task easier. 
+          There are various tools where you can speed your task without wasting your time.
+        </p>
+          </div>
+          <div class="col-md-4">
+            <h4 class="_font_h">Contact</h4>
+            <a class="_font_p">iamdemigod123@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>   
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var json_btn = document.getElementById("convertToJson");
+      json_btn.addEventListener("click", function () {
+        var txt = document.getElementById("json_object").value;
+        var jsonObj = JSON.parse(txt);
+        document.getElementById("result-before").innerHTML =
+        JSON.stringify(jsonObj, undefined, 2);
+
+      });
+    </script>
+  </body>
+</html>

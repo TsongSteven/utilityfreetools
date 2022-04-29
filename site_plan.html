@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Siteplan Generator is tool where Site plan for land or property is generated." />
+<meta name="keywords" content="Online Siteplan Generator, Siteplan maker, Siteplan for land" />      
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<!-- <link href="css/mdb.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/cropper.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/tsongcss.css">
+       <link type="text/css" href="https://uicdn.toast.com/tui-color-picker/v2.2.3/tui-color-picker.css" rel="stylesheet">
+        <link type="text/css" href="css/tui-image-editor/tui-image-editor.css" rel="stylesheet">	  
+        <title>Utilityfreetool - Free Online Tools for you.</title>
+	<style>
+		._menui.active {
+			background-color: #0099CC;
+		}
+		
+	  </style>
+    <title>Land</title>
+    <style>
+      .table_border,
+      thead,
+      tr,
+      th,
+      td {
+        border: 1px solid #000000 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand text-dark _font" title="chopimg"><span class="text-danger"><i class="fas fa-tools"></i> UtilityFreeTool</span></a>
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseImgTools"
+          aria-controls="basicExampleNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars text-dark"></i>
+        </button>
+      </div>
+    </nav>
+    <h1 class="text-center alert alert-success font-weight-bold">
+      Site Plan Creator
+    </h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <form class="mt-4">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">Site Plan Address</div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <textarea
+                        placeholder="Site Plan Address"
+                        class="form-control"
+                        id="site_plan_address"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">Land Schedule</div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        placeholder="Mouza"
+                        class="form-control"
+                        id="mouza"
+                      />
+                      <input
+                        type="text"
+                        placeholder="J.L No"
+                        class="form-control mt-2"
+                        id="jlno"
+                      />
+                      <input
+                        type="text"
+                        placeholder="Plot No"
+                        class="form-control mt-2"
+                        id="plotno"
+                      />
+                      <input
+                        type="text"
+                        placeholder="Khatiyan No"
+                        class="form-control mt-2"
+                        id="khatiyan"
+                      />
+                      <input
+                        type="text"
+                        placeholder="Sheet No"
+                        class="form-control mt-2"
+                        id="sheetno"
+                      />
+                      <input
+                        type="text"
+                        placeholder="Classification"
+                        class="form-control mt-2"
+                        id="classification"
+                      />
+                      <input
+                        type="text"
+                        placeholder="Area"
+                        class="form-control mt-2"
+                        id="area"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">Seller</div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        placeholder="Seller Name"
+                        class="form-control"
+                        id="seller_name"
+                      />
+                      <div class="row mt-2">
+                        <div class="col-md-4">
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="seller_rel_dd"
+                          >
+                            <option value="0">Select Relation</option>
+                            <option value="S/o">S/o</option>
+                            <option value="D/o">D/o</option>
+                            <option value="W/o">W/o</option>
+                          </select>
+                        </div>
+                        <div class="col-md-8">
+                          <input
+                            type="text"
+                            placeholder="Person Related to Seller"
+                            class="form-control"
+                            id="son_daughter_wife_name_s"
+                          />
+                        </div>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Address"
+                        class="form-control mt-2"
+                        id="address_s"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">Purchaser</div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        placeholder="Buyer Name"
+                        class="form-control"
+                        id="buyer_name"
+                      />
+                      <div class="row mt-2">
+                        <div class="col-md-4">
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="buyer_rel_dd"
+                          >
+                            <option value="0">Select Relation</option>
+                            <option value="S/o">S/o</option>
+                            <option value="D/o">D/o</option>
+                            <option value="W/o">W/o</option>
+                          </select>
+                        </div>
+                        <div class="col-md-8">
+                          <input
+                            type="text"
+                            placeholder="Person Related to Purchaser "
+                            class="form-control"
+                            id="son_daughter_wife_name_b"
+                          />
+                        </div>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Address"
+                        class="form-control mt-2"
+                        id="address_b"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mt-3">
+                  <div class="card-header">Scale</div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        placeholder="Scale"
+                        class="form-control"
+                        id="scale_inp"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <hr />
+        <div class="col-md-12">
+          <div
+            class="mt-5 p-3"
+            id="print_section"
+            style="width: 1169px; height: 827px"
+          >
+            <h4 class="font-weight-bold text-center">
+              SITE PLAN SHOWING THE LAND AT <span id="add_site"></span>
+            </h4>
+            <table class="table table_border">
+              <thead>
+                <tr>
+                  <th>Mouza</th>
+                  <th>J.L. No</th>
+                  <th>Plot No</th>
+                  <th>Khatiyan No</th>
+                  <th>Sheet No</th>
+                  <th>Classification No</th>
+                  <th>Area</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span id="mouza_res"></span></td>
+                  <td><span id="jlno_res"></span></td>
+                  <td><span id="plotno_res"></span></td>
+                  <td><span id="khatiyan_res"></span></td>
+                  <td><span id="sheetno_res"></span></td>
+                  <td><span id="class_res"></span></td>
+                  <td><span id="area_res"></span></td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            <div class="text-center">
+              <p class="font-weight-bold">
+                Scale 1in = <span id="scale"></span>
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-md-9"></div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-header font-weight-bold">Seller</div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <p class="font-weight-bold">
+                        Name: <span id="seller_name_res"></span>
+                      </p>
+                      <p class="font-weight-bold">
+                        <span id="seller_dd_rel_res"></span>
+                        :<span id="seller_sdw_res"></span>
+                      </p>
+                      <p class="font-weight-bold">
+                        Address: <span id="seller_adress_res"></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-3">
+                  <div class="card-header font-weight-bold">Buyer</div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <p class="font-weight-bold">
+                        Name: <span id="buyer_name_res"></span>
+                      </p>
+                      <p class="font-weight-bold">
+                        <span id="buyer_dd_rel_res"></span>:<span
+                          id="buyer_sdw_res"
+                        ></span>
+                      </p>
+                      <p class="font-weight-bold">
+                        Address: <span id="buyer_adress_res"></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <input
+        type="button"
+        name="print"
+        class="btn btn-primary rounded-0"
+        id="btn_print"
+        value="Download Land Schedule"
+      />
+    </div>
+    <div class="container mt-3">
+      <h3 class="font-weight-bold _font_h">About</h3>
+      <p class="_font_p">
+        If you want to generate Site Plan for your land you can use this web app
+        to generate Site plan. This site plan is used in india and if you are
+        tired of giving money to someone to create siteplan you can easily use
+        this software to generate siteplan.
+      </p>
+      <h4 class="font-weight-bold _font_h">How to do it?</h4>
+      <p class="_font_p">Step 1: Put all the required informations.</p>
+      <p class="_font_p">Step 2: See all the inputs in the Sitemap created below the form.</p>
+      <p class="_font_p">
+        Step 3: If all are created then click the download button to download
+        Generated SITE PLAN.
+      </p>
+      <p class="_font_p">
+        Step 4: Go to the directory where it is downloaded(mostly in downloads)
+        use the jpg to print in tracing paper.
+      </p>
+    </div>
+    <footer class="page-footer bg-dark text-white p-3 mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4 class="_font_h">Quick Links</h4>
+              <div class="text-left">
+          <a href="rectangle.html" class="text-white _font_p" title="Crop Image">Crop Image</a><br>
+          <a href="base64Encode.html" class="text-white _font_p" title="Convert Image">Convert Image</a><br>
+          <a href="filter.html" class="text-white _font_p" title="Image Filters">Image Filters</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4 class="_font_h">About</h4>
+            <p class="_font_p">UtilityFreeTool is an online Free tool where you can use this tools to make your task easier. 
+          There are various tools where you can speed your task without wasting your time.
+        </p>
+          </div>
+          <div class="col-md-4">
+            <h4 class="_font_h">Contact</h4>
+            <a class="_font_p">iamdemigod123@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.js"
+      integrity="sha512-sk0cNQsixYVuaLJRG0a/KRJo9KBkwTDqr+/V94YrifZ6qi8+OO3iJEoHi0LvcTVv1HaBbbIvpx+MCjOuLVnwKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+      var site_plan_address = document.getElementById("site_plan_address");
+
+      var mouza = document.getElementById("mouza");
+      var jlno = document.getElementById("jlno");
+      var khatiyan = document.getElementById("khatiyan");
+      var sheetno = document.getElementById("sheetno");
+      var classification = document.getElementById("classification");
+      var area = document.getElementById("area");
+      var plno = document.getElementById("plotno");
+      var seller_rel_dd = document.getElementById("seller_rel_dd");
+      var buyer_rel_dd = document.getElementById("buyer_rel_dd");
+
+      var mres = document.getElementById("mouza_res");
+      var jlres = document.getElementById("jlno_res");
+      var pres = document.getElementById("plotno_res");
+      var khres = document.getElementById("khatiyan_res");
+      var shres = document.getElementById("sheetno_res");
+      var clres = document.getElementById("class_res");
+      var ares = document.getElementById("area_res");
+      var seller_name = document.getElementById("seller_name");
+      var seller_dd_rel_res = document.getElementById("seller_dd_rel_res");
+      var buyer_dd_rel_res = document.getElementById("buyer_dd_rel_res");
+
+      var son_daughter_wife_name_s = document.getElementById(
+        "son_daughter_wife_name_s"
+      );
+      var address_s = document.getElementById("address_s");
+
+      var buyer_name = document.getElementById("buyer_name");
+      var son_daughter_wife_name_b = document.getElementById(
+        "son_daughter_wife_name_b"
+      );
+      var address_b = document.getElementById("address_b");
+      var scale_in = document.getElementById("scale_inp");
+      //if(mouza  jlno khatiyan sheetno classification area plno seller_rel_dd buyer_rel_dd son_daughter_wife_name_s address_s buyer_name son_daughter_wife_name_b address_b scale_in)
+
+      scale_in.onkeyup = function () {
+        document.getElementById("scale").innerHTML = scale_in.value;
+      };
+      mouza.onkeyup = function () {
+        mres.innerHTML = mouza.value;
+      };
+      jlno.onkeyup = function () {
+        jlres.innerHTML = jlno.value;
+      };
+      plno.onkeyup = function () {
+        pres.innerHTML = plno.value;
+      };
+      khatiyan.onkeyup = function () {
+        khres.innerHTML = khatiyan.value;
+      };
+      sheetno.onkeyup = function () {
+        shres.innerHTML = sheetno.value;
+      };
+      classification.onkeyup = function () {
+        clres.innerHTML = classification.value;
+      };
+      area.onkeyup = function () {
+        ares.innerHTML = area.value;
+      };
+
+      seller_name.onkeyup = function () {
+        seller_name_res.innerHTML = seller_name.value;
+      };
+      seller_rel_dd.onchange = function () {
+        seller_dd_rel_res.innerHTML = seller_rel_dd.value;
+      };
+      son_daughter_wife_name_s.onkeyup = function () {
+        seller_sdw_res.innerHTML = son_daughter_wife_name_s.value;
+      };
+      address_s.onkeyup = function () {
+        seller_adress_res.innerHTML = address_s.value;
+      };
+
+      buyer_name.onkeyup = function () {
+        buyer_name_res.innerHTML = buyer_name.value;
+      };
+      buyer_rel_dd.onchange = function () {
+        buyer_dd_rel_res.innerHTML = buyer_rel_dd.value;
+      };
+      son_daughter_wife_name_b.onkeyup = function () {
+        buyer_sdw_res.innerHTML = son_daughter_wife_name_b.value;
+      };
+      address_b.onkeyup = function () {
+        buyer_adress_res.innerHTML = address_b.value;
+      };
+      site_plan_address.onkeyup = function () {
+        add_site.innerHTML = site_plan_address.value;
+      };
+
+      document
+        .getElementById("btn_print")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          if (
+            mouza.value == "" &&
+            jlno.value == "" &&
+            khatiyan.value == "" &&
+            sheetno.value == "" &&
+            classification.value == "" &&
+            area.value == "" &&
+            plno.value == "" &&
+            son_daughter_wife_name_s.value == "" &&
+            address_s.value == "" &&
+            buyer_name.value == "" &&
+            son_daughter_wife_name_b.value == "" &&
+            address_b.value == "" &&
+            scale_in.value == ""
+          ) {
+            swal({
+              title: "Fields Empty!",
+              text: "All Fileds are Mandatory",
+              icon: "warning",
+              button: "ok",
+            });
+          } else if (
+            mouza.value == "" ||
+            jlno.value == "" ||
+            khatiyan.value == "" ||
+            sheetno.value == "" ||
+            classification.value == "" ||
+            area.value == "" ||
+            plno.value == "" ||
+            son_daughter_wife_name_s.value == "" ||
+            address_s.value == "" ||
+            buyer_name.value == "" ||
+            son_daughter_wife_name_b.value == "" ||
+            address_b.value == "" ||
+            scale_in.value == ""
+          ) {
+            swal({
+              title: "One or more Field(s) are Empty!",
+              text: "All Fileds are Mandatory, please fill the missing fields",
+              icon: "warning",
+              button: "ok",
+            });
+          } else if (seller_rel_dd.value == "0" && buyer_rel_dd.value == "0") {
+            swal({
+              title: "Please Select appropriate relation to Buyer/Seller!",
+              text: "Select either S/o,D/o,W/o",
+              icon: "warning",
+              button: "ok",
+            });
+          } else {
+            swal({
+              title: "Make sure ALL fileds are put correctly!",
+              text: "If Yes then please Click Ok to Download or else press Cancel",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+            }).then((willDownload) => {
+              if (willDownload) {
+                html2canvas(document.getElementById("print_section")).then(
+                  function (canvas) {
+                    var anchorTag = document.createElement("a");
+                    document.body.appendChild(anchorTag);
+                    anchorTag.download = "site_plan.jpg";
+                    anchorTag.href = canvas.toDataURL();
+                    anchorTag.target = "_blank";
+                    anchorTag.click();
+                  }
+                );
+                swal("Downloaded...");
+              } else {
+                swal("Cancelled!", {
+                  icon: "success",
+                });
+              }
+            });
+          }
+        });
+    </script>
+  </body>
+</html>

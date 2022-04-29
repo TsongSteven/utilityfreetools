@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Gurajada&family=IM+Fell+DW+Pica&display=swap');
+
+body{
+/*
+	background-color: #212121 !important;
+	color: #878d8d; 
+	*/
+	
+} 
+		.navbar-nav li a:hover{
+			background-color: white !important;
+/*			border: 1px solid black;*/
+			cursor: pointer;
+		}
+._font{
+	font-family: Roboto, monospace;
+
+}
+
+._font_p{
+font-family: 'IM Fell DW Pica', serif;
+  font-size: 20px;
+}
+._font_h{
+font-family: 'IM Fell DW Pica', serif;
+  
+}
+.rlink{
+	text-decoration: none !important;
+}
+.navbar{
+	border-bottom: 1px solid #e0e0e0;
+}
+
+._navbar_main{
+	box-shadow: none !important;
+}
+._toggle_btn_top{
+	display: block !important;
+}
+._wrapper{
+	margin-top: 10px;
+}
+._side_menu_li{
+	background-color: #393836;
+}
+._side_menu{
+	background-color: #393836;
+
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left: 0;
+	margin-top: 56px;
+	width: 200px;
+	/*border: 1px solid red; */
+	transition:all ease 0.25s; 
+	transform:translateX(-100%);
+	z-index: 2000;
+}
+
+
+.nav-link{
+	display: block;
+	white-space: nowrap;
+}
+.nav-link > i{
+	margin-right: 10px;
+	font-size: 20px;
+	vertical-align: middle;
+	height: 25x;
+	width: 25px;
+	//border: 2px solid red;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-link:hover{
+	background-color: #212121 !important;
+
+}
+
+
+.t-grid .t-grid-4 a:not(:last-child){
+ border-right: 1px solid #ededed;
+}
+/* Cropper */
+
+img {
+  max-width: 100%; /* This rule is very important, please do not ignore this! */
+}
+
+#canvas {
+  max-height: 600px;
+  width: 100%;
+  cursor: default;
+  border: 1px solid black;
+	    background-color: #A9A9A9;
+}
+#result {
+  min-height: 200px;
+  width: 100%;
+  background-color: #ffffff;
+  cursor: default;
+  border: 1px solid black;
+}
+.cropper-bg {
+    background-image: none !important;
+	background-color: white !important;
+}
+.btn-upload{
+	width: 100%;
+	border-radius: 0;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.btn-task{
+	border-radius: 0;
+	margin-left: 0 !important;
+	margin-right: 0 !important;	
+}
+
+.g-t{
+	overflow: hidden;
+}
