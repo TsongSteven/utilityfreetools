@@ -4,9 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="The strong password generated here which is the combinations of alphabets, numbers and
-special characters will make your password strong and cannot be guessed" />  
-<meta name="keywords" content="Online password generetor, strong password generator, password maker" />       
+<meta name="description" content="This tool is used to count no of words in the paragraphs. This tools helps us to count minimum or maximum 
+no of words that is required." />    
+<meta name="keywords" content="word counter, words counter, word tool" />   
   <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <!-- Bootstrap core CSS -->
@@ -25,8 +25,6 @@ special characters will make your password strong and cannot be guessed" />
 		}
 		
 	  </style>
-
-    <title>Hello, world!</title>
   </head>
   <body>
     <nav  class="navbar navbar-expand-lg navbar-dark">
@@ -42,26 +40,24 @@ special characters will make your password strong and cannot be guessed" />
     </nav>    
     <div class="container">
       <h3 class="font-weight-bold">
-        Click on the button to generate random password.
+        Count words
       </h3>
-      <input type="text" class="form-control" id="pass_length" />
-      <button id="generatePasswordBtn" class="btn btn-success rounded-0 mt-3">
-        Click Here
+      <textarea class="form-control" id="words" rows="10"></textarea>
+      <button id="countWords" class="btn btn-success rounded-0 mt-3">
+        Count words
       </button>
-      <br />
-
       <div class="mt-3">
-        <h3 class="alert alert-info">Your Generated Password</h3>
-        <div class="border border-danger p-5"
-          ><h4 class="font-weight-bold">Generated Password: <span id="res"></span></h4
-        ></div>
+        <h3 id="res" class="font-weight-bold"></h3>
       </div>
+      <br>
+      <hr>
       <div class="mt-3">
-        <h4 class="_font_h">Why Use Password Generator?</h4>
+        <h4 class="_font_h">Words Counter</h4>
         <p class="_font_p">
-          Strong password is vital for your any online login credentials. Strong password can protect your online 
-          account from any sorts of theft or malicious attack. The strong password generated here which is the combinations of alphabets, numbers and
-          special characters will make your password strong and cannot be guessed. 
+          This tool is used to count no of words in the paragraphs. This tools helps us to count minimum or maximum 
+          no of words that is required.<br>
+          In any work related weather assignments, short text, story, essay etc there are always words length required.
+          This tools is beneficial if the words lengths are mentioned.
         </p>
       </div>
     </div>
@@ -95,24 +91,11 @@ special characters will make your password strong and cannot be guessed" />
       crossorigin="anonymous"
     ></script>
     <script>
-      function generatePassword(pass_length) {
-        var pass = "";
-        var str =
-          "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
-          "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
-
-        for (i = 1; i <= pass_length; i++) {
-          var char = Math.floor(Math.random() * str.length + 1);
-
-          pass += str.charAt(char);
-        }
-
-        $('#res').html(pass);
-      }
-      $("#generatePasswordBtn").on("click", function () {
-        var pass_length = document.getElementById("pass_length").value;
-        generatePassword(pass_length);
-      });
+        $('#countWords').on('click', function(){
+            $words = $('#words').val();
+            $countedWords = $words.split(' ').length;
+            $('#res').text('Total Words: '+ $countedWords);
+        });
     </script>
   </body>
 </html>
